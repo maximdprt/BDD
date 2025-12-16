@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 248 250 252;
+    --foreground: 15 23 42;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-secondary/10;
+  }
+  body {
+    @apply bg-gradient-to-br from-background via-white to-background text-secondary;
+    font-family: 'Inter', 'Geist', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
